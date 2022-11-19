@@ -1,0 +1,11 @@
+name: ChangeToBarrel
+version: '${project.version}'
+main: silverassist.changetobarrel.ChangeToBarrel
+api-version: 1.17
+
+commands:
+  changebarrel:
+    description: "樽置き換えワールド指定コマンド"
+    aliases: cb
+    permission-message: §c§l権限がありません！
+    permission: cb.admin
