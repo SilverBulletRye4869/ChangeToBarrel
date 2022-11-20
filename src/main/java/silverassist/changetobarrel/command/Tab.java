@@ -15,7 +15,7 @@ public class Tab implements TabCompleter {
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         if(args.length==1)return OPTIONS;
         else{
-            if(args[0].contains("this"))return null;
+            if(args[0].contains("this") || args[0].equals("list"))return null;
             List<String> worldName = new ArrayList<>();
             Bukkit.getWorlds().forEach(world -> worldName.add(world.getName()));
             return worldName;
